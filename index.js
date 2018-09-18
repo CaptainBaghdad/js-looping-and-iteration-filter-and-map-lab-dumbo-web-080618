@@ -40,7 +40,7 @@ function  exactMatch(drivers,obj){
 
 
 function  exactMatchToList(drivers, obj){
-  return exactMatch(drivers,obj).map((ele) => { ele.name;
+  return exactMatch(drivers,obj).map(function(ele){ return ele.name;}
     
   });
 }
