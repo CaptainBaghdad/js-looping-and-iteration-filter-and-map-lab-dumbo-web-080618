@@ -29,15 +29,13 @@ function driverNamesWithRevenueOver(drivers,revenue){
 
 
 function  exactMatch(drivers,obj){
-  return drivers.filter(function(ele){
-   if (obj.name !== undefined){
-     return ele.name === obj.name;
-        
-    } else {
+  return drivers.filter( function(ele) {
+ if (obj.name !== undefined) {
+   return ele.name === obj.name; }
+   else {
    return ele.revenue === obj.revenue;
   }
-    
-  });  
+});
 }
 
 
